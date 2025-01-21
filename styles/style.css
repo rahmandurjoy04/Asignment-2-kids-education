@@ -358,7 +358,9 @@ li {
 .story {
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    width: 290.69px;
+    /* width: 290.69px; */
+    /* height: 301.61px; */
+    width: 240.69px;
     height: 301.61px;
     gap: 1rem;
 }
