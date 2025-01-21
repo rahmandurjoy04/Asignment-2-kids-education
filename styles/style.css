@@ -126,12 +126,10 @@ li {
 }
 
 .hero-left {
-    /* width: 60%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border: 2px solid tomato;
 }
 
 .hero-heading {
@@ -162,9 +160,6 @@ li {
     background-color: var(--black);
 }
 
-.hero-image {
-    border: 2px solid tomato;
-}
 
 /* standard curriculum styles */
 .standard {
@@ -301,7 +296,8 @@ li {
     justify-content: space-between;
     gap: 2rem;
 }
-.stories-heading{
+
+.stories-heading {
     font-weight: 700;
     padding: 40px 0px 40px 0px;
 }
@@ -327,18 +323,21 @@ li {
     top: -1.75rem;
     left: 2rem;
 }
-.left-story-heading{
+
+.left-story-heading {
     font-size: 1.5rem;
-font-weight: 700;
-margin-bottom: 3rem;
-padding-left: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    padding-left: 3rem;
 }
-.left-story-para{
+
+.left-story-para {
     font-weight: 500;
     font-size: 1rem;
     color: #666666;
     padding-left: 3rem;
 }
+
 .right-stories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -380,8 +379,57 @@ padding-left: 3rem;
     background: rgb(93, 88, 240);
 }
 
+.view-all {
+    margin: 1rem 0;
+}
+
+
+/* footer section styles */
+.footer {
+    background-color: var(--sky-blue);
+    height: 280px;
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer>div {
+    margin-top: 2rem;
+}
+
+.left-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-left p {
+    margin-top: 2rem;
+    width: 399.02px;
+    height: 100px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.footer-middle li {
+    margin: 1rem;
+}
+
+.footer-middle a {
+    color: var(--white);
+    font-weight: 500;
+
+}
+
+.footer-right h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
 /* responsive media query for mobile */
 @media screen and (max-width:576px) {
+
+    /* responsiveness for navbar */
     .navbar {
         display: none;
     }
@@ -391,10 +439,8 @@ padding-left: 3rem;
         justify-content: space-between;
         align-items: center;
     }
-}
 
-/* responsiveness of hero section */
-@media screen and (max-width:576px) {
+    /* responsiveness of hero section */
     #hero {
         width: 90%;
         flex-direction: column-reverse;
@@ -411,16 +457,27 @@ padding-left: 3rem;
     .hero-image {
         width: 100%;
     }
-
-}
-
-/* responsiveness for standard curriculum */
-@media screen and (max-width:576px) {
+    /* responsiveness for standard curriculum */
     .standard-container {
         flex-direction: column;
         width: 100%;
     }
-    .left-story{
+
+    .left-story {
         display: none;
+    }
+
+    /* responsiveness for footer */
+    .footer{
+        flex-direction: column;
+        height: 650px;
+    }
+    .footer-left,
+    .footer-middle,
+    .footer-right{
+        margin-left: 2rem;
+    }
+    .footer-right{
+        margin-bottom: 2rem;
     }
 }
