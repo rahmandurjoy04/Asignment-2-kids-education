@@ -169,7 +169,7 @@ li {
 
 /* standard curriculum styles */
 .standard {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -230,7 +230,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .card-heading {
@@ -358,9 +358,7 @@ li {
 .story {
     border-radius: 16px;
     background: rgb(255, 255, 255);
-    /* width: 290.69px; */
-    /* height: 301.61px; */
-    width: 240.69px;
+    width: 290.69px;
     height: 301.61px;
     gap: 1rem;
 }
@@ -467,7 +465,7 @@ li {
         width: 100%;
     }
 
-    .hero-image {
+    .hero-image>img {
         width: 100%;
     }
     /* responsiveness for standard curriculum */
@@ -482,11 +480,25 @@ li {
     .lr{
         display: none;
     }
+    .story{
+        width: 180px;
+        height:301px;
+    }
+    .right-story-btn {
+        width: 144.51px;
+        height: 32.35px;
+        top: -1.2rem;
+        left: 1.2rem;
+        font-size: 12px;
+    }
 
     /* responsiveness for footer */
     .footer{
         flex-direction: column;
         height: 650px;
+    }
+    .footer-left>p{
+        width: 100%;
     }
     .footer-left,
     .footer-middle,
